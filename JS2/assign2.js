@@ -34,8 +34,7 @@ const formvalidation = (name, email, phone) => {
     mobilecheck = false;
     document.getElementById("mobilecheck").style.display = "block";
   }
-  //   console.log(name, email, phone);
-  //   console.log(namecheck, emailcheck, mobilecheck);
+
   saveAllvalidData(namecheck, emailcheck, mobilecheck, name, email, phone);
 };
 
@@ -58,7 +57,6 @@ const saveAllvalidData = (
 const addDetailsToTable = () => {
   var table = document.getElementById("table-body");
   let data = document.createElement("tr");
-  //   console.log(localStorage);
   data.innerHTML = `<tr>
     <td>${counter}</td>
     <td>${localStorage.getItem("name")}</td>
